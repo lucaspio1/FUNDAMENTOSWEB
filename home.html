@@ -3,100 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Shop</title>
-    <link rel="stylesheet" href="styles1.css">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Referência ao arquivo CSS externo -->
 </head>
 <body>
-    <header>
-        <div class="header-left">
-            <h1>
-                <span>PET</span>
-                SHOP
-            </h1>
-        </div>
-        <div class="header-right">
-            <nav>
-                <ul>
-                    <li><a href="#">Entrar</a></li>
-                    <li><a href="#">Registrar</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <h2>Encontre os melhores produtos e serviços para o seu PET</h2>
-            <div class="search">
-                <input type="text" placeholder="Endereço de Entrega">
-                <a class="button" href="/loja.html" >Buscar</a>
-            </div>
-            <div class="images">
-                <img src="img/dog1.jpg" alt="Cachorro com óculos">
-                <img src="img/dog2.JPG" alt="Cachorro com uma criança">
-            </div>
-        </div>
-        <section class="steps">
-            <div class="step">
-                <img src="img/dog3.jpg" alt="Cachorro com coleira">
-                <h3>Passo 1</h3>
-                <p>Informe a localização do seu pet. Digite o endereço ou ative os serviços de localização para marcar o local</p>
-            </div>
-            <div class="step">
-                <img src="img/dog4.jpg" alt="Cachorro com ração">
-                <h3>Passo 2</h3>
-                <p>Agora escolha os produtos e serviços desejados para o seu pet. Você está mais perto de cuidar do seu pet com carinho.</p>
-            </div>
-            <div class="step">
-                <img src="img/dog5.jpg" alt="Cachorro dormindo">
-                <h3>Passo 3</h3>
-                <p>Realize o pagamento. Depois, relaxe enquanto preparamos tudo para o seu pet!</p>
-            </div>
-        </section>
-        <section class="additional-info">
-            <div class="entregador">
-                <h2>Como entregador</h2>
-                <p>Ganhe dinheiro entregando produtos para pets. Tudo que você precisa são habilidades e um veículo.</p>
-                <button>Entregue conosco</button>
-                <img src="img/entregador.png" alt="Imagem de um entregador">
-            </div>
-            <div class="parceiro">
-                <h2>Como parceiro</h2>
-                <p>A PetShopOnline ajuda pet shops a crescerem com vendas online, programas de fidelidade e muito mais.</p>
-                <button>Seja nosso parceiro</button>
-                <img src="img/parceiro.png" alt="Imagem de um parceiro">
-            </div>
+    <div class="header">
+        <img src="/img/dog.jpg" alt="Logo PetShop Online">
+        <nav>
+            <a href="/home.html">PetShop Online</a>
+            <a href="/loja.html">Produtos</a>
+            <a href="#">Serviços</a>
+            <a href="/reserva.html">Perfil</a>
+        </nav>
+    </div>
 
-            <div class="section">
-                <h2>Como colega de Trabalho</h2>
-                <p>Faça parte de uma equipe que está construindo um serviço de entrega de produtos para pets de alta qualidade.</p>
-                <button class="button">Trabalhe conosco</button>
-                <div class="image-container">
-                    <img src="img/trabalho.png" alt="Imagem de colegas trabalhando">
+    <div class="container">
+        <h1>CADASTRO</h1>
+        <div class="forms-container">
+            <div class="form form-humano">
+                <h2>Humano</h2>
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Digite seu Nome">
                 </div>
-
-        </section>
-        <section class="app-info">
-            <div class="container">
-                <div class="section">
-                    <h2>Baixe nosso aplicativo</h2>
-                    <div class="image-container">
-                        <img src=""alt = "Imagem do aplicativo">
-                    </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Digite seu Email">
                 </div>
-        
-                <div class="section">
-                    <h2>Faça pedidos com facilidade!</h2>
-                    <p>Receba os produtos mais deliciosos para seu pet na porta de casa com a PetShopOnline. Nosso serviço de entrega rápida oferece uma variedade de produtos para pets de lojas locais.</p>
-                    <button class="button">Baixar</button>
-                    <div class="image-container">
-                        <img src="img/money.PNG" alt="Imagem de pedidos online">
-                    </div>
-                </div>
-        
-                
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="Digite uma nova Senha">
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="form form-pet">
+                <h2>PET</h2>
+                <div class="form-group">
+                    <label for="nomePet">Nome do PET:</label>
+                    <input type="text" id="nomePet" placeholder="Digite o Nome do PET">
+                </div>
+                <div class="form-group">
+                    <label for="tipoPet">Tipo:</label>
+                    <input type="text" id="tipoPet" placeholder="Digite o Tipo de seu PET">
+                </div>
+                <div class="form-group">
+                    <label for="racaPet">Raça:</label>
+                    <input type="text" id="racaPet" placeholder="Digite a raça do seu PET">
+                </div>
+                <div class="form-group">
+                    <label for="temperamentoPet">Temperamento:</label>
+                    <input type="text" id="temperamentoPet" placeholder="Digite o temperamento do seu PET">
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </div>
 </body>
 </html>
